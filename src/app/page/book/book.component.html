@@ -1,0 +1,8 @@
+<button class="click-magic" (click)="showBookDetail()">Vào Thế Giới Phép Thuật</button>
+<div id="container">
+
+  @for (book of (books$ |async)?.books; track $index){
+    <app-book-card [book]="book"></app-book-card>
+  }
+
+</div>

@@ -1,0 +1,28 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  height: 100vh; /* Full viewport height for vertical centering */
+}
+
+.example-card {
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.cat-img {
+  width: 100%;
+}
+.cat-img img{
+  width: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+}
+

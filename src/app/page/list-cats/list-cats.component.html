@@ -1,0 +1,9 @@
+
+<button (click)="showCatDetail() "  >VÀO ĐẢO MÈO</button>
+@for (cat of (cat$ | async)?.cats; track $index){
+  <app-cat-card [cat]="cat"></app-cat-card>
+}
+
+@if((cat$ | async)?.loading){
+  <mat-spinner></mat-spinner>
+}
